@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj": {}
+    "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj": {
+    "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj",
+        "projectUniqueName": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj",
         "projectName": "BOA.Seguridad",
-        "projectPath": "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj",
-        "packagesPath": "C:\\Users\\Mi DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\obj\\",
+        "projectPath": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\BOA.Seguridad.csproj",
+        "packagesPath": "C:\\Users\\Antonio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mi DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,6 +59,10 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.3.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.2.1, )"
             }
           },
           "imports": [

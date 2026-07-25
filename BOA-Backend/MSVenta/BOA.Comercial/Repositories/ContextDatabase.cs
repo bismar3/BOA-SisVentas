@@ -13,6 +13,7 @@ namespace BOA.Comercial.Repositories
         public DbSet<Transaccion> Transacciones { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
         public DbSet<Devolucion> Devoluciones { get; set; }
+        public DbSet<Bitacora> Bitacoras { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,6 +23,7 @@ namespace BOA.Comercial.Repositories
             modelBuilder.Entity<Transaccion>().ToTable("transacciones");
             modelBuilder.Entity<Reserva>().ToTable("reservas");
             modelBuilder.Entity<Devolucion>().ToTable("devoluciones");
+            modelBuilder.Entity<Bitacora>().ToTable("bitacora");
         }
     }
 }

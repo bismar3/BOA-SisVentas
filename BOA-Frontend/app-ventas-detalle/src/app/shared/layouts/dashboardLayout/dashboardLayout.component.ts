@@ -75,9 +75,12 @@ export class DashboardLayoutComponent implements OnInit, AfterViewInit {
   }
 
   logout() {
+    // Limpia TODO lo que sea del usuario para que nada sobreviva de una sesión a la siguiente.
     sessionStorage.removeItem('user');
     sessionStorage.removeItem('roles');
     sessionStorage.removeItem('token');
+    sessionStorage.removeItem('clienteId');
+    sessionStorage.removeItem('vuelo_pendiente');
     this.router.navigate(['/']);
   }
 
@@ -114,6 +117,32 @@ export class DashboardLayoutComponent implements OnInit, AfterViewInit {
     const texto = this.searchTerm.toLowerCase();
     this.buscandoGlobal = true;
     this.cdr.markForCheck();
+
+    // Un usuario es "privilegiado" si administra alguna de las fuentes que expone el buscador.
+    // El Cliente (solo compras/reservas/tickets) no las tiene: solo ve vuelos, con enlace a comprar.
+    const esPrivilegiado = ['usuarios', 'aeropuertos', 'rutas', 'programacion_vuelos']
+      .some(p => this.hasPermission(p));
+
+    if (!esPrivilegiado) {
+      this.programacionVueloService.getAll().subscribe(vuelos => {
+        const resultados: ResultadoBusqueda[] = [];
+        vuelos
+          .filter(v => v.codigo_Vuelo?.toLowerCase().includes(texto))
+          .slice(0, 5)
+          .forEach(v => resultados.push({
+            tipo: 'Vuelo',
+            icono: '✈️',
+            titulo: v.codigo_Vuelo,
+            subtitulo: `Estado: ${v.estado}`,
+            ruta: ['/dashboard/cliente/buscar-vuelos']
+          }));
+
+        this.resultadosBusqueda = resultados;
+        this.buscandoGlobal = false;
+        this.cdr.markForCheck();
+      });
+      return;
+    }
 
     forkJoin({
       vuelos: this.programacionVueloService.getAll(),

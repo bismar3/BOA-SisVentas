@@ -10,11 +10,15 @@
 
   <div *ngIf="cargando" class="text-center text-gray-400 py-10">Cargando...</div>
 
-  <div *ngIf="!cargando && tickets.length === 0" class="text-center text-gray-400 py-10">
+  <div *ngIf="errorPerfil" class="text-center text-red-400 py-10">
+    {{ errorPerfil }}
+  </div>
+
+  <div *ngIf="!cargando && !errorPerfil && tickets.length === 0" class="text-center text-gray-400 py-10">
     No tienes tickets registrados.
   </div>
 
-  <div *ngIf="!cargando && tickets.length > 0" class="grid gap-4">
+  <div *ngIf="!cargando && !errorPerfil && tickets.length > 0" class="grid gap-4">
     <div *ngFor="let t of tickets"
       class="bg-gray-800 rounded-2xl border border-gray-700 shadow-lg p-5">
       <div class="flex justify-between items-center flex-wrap gap-4">

@@ -2,6 +2,7 @@
 using MSVenta.Seguridad.DTOs;
 using MSVenta.Seguridad.Models;
 using MSVenta.Seguridad.Repositories;
+using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,15 @@ namespace MSVenta.Seguridad.Services
     public class UsuarioService : IUsuarioService
     {
         private readonly ContextDatabase _context;
+        private readonly IHistorialService _historialService;
 
         private const int MAX_INTENTOS_FALLIDOS = 5;
         private const int MINUTOS_BLOQUEO = 5;
 
-        public UsuarioService(ContextDatabase context)
+        public UsuarioService(ContextDatabase context, IHistorialService historialService)
         {
             _context = context;
+            _historialService = historialService;  
         }
 
         public async Task<IEnumerable<UsuarioDTO>> GetAllUsuarios()
@@ -72,20 +75,40 @@ namespace MSVenta.Seguridad.Services
                 Telefono = u.Telefono,
                 Estado = u.Estado,
                 Rol_Id = u.Rol_Id,
-                Roles = roles
+                Fecha_Creacion = u.Fecha_Creacion,
+                Direccion = u.Direccion,
+                Roles = roles,
+                hora = u.hora
             };
         }
 
-        public async Task<Usuario> CreateUsuario(Usuario usuario)
+        public async Task<Usuario> CreateUsuario(Usuario usuario, int? adminId =null)
         {
             ValidarComplejidadPassword(usuario.Password);
 
             usuario.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password, workFactor: 11);
+            usuario.Fecha_Creacion = DateTime.Now;
+            usuario.hora = DateTime.Now.TimeOfDay;
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
-            return usuario;
-        }
+            var ahoraIns = DateTime.Now;
+            var ahora = DateTime.Now;
 
+            _context.Bitacoras.Add(new Bitacora
+            {
+                Tabla = "usuario",
+                Transaccion="INSERT",
+                ID_Usuario= adminId,
+                NroRegistro=usuario.UserId,
+                fecha=ahoraIns,
+                hora = ahora.TimeOfDay,
+            });
+ 
+            await _context.SaveChangesAsync();
+            return usuario;
+
+        }
+       
         private void ValidarComplejidadPassword(string password)
         {
             if (string.IsNullOrWhiteSpace(password) || password.Length < 8)
@@ -98,35 +121,77 @@ namespace MSVenta.Seguridad.Services
                 throw new ArgumentException("La contraseña debe contener al menos una letra y un número.");
         }
 
-        public async Task UpdateUsuario(Usuario usuario)
+        public async Task UpdateUsuario(Usuario usuario, int? adminId = null)
         {
-            var existente = await _context.Usuarios.AsNoTracking()
+            // Entidad TRACKEADA: actualizamos campo por campo para no pisar columnas
+            // que el cliente no envía (rol, contadores de bloqueo, fecha de creación, etc.).
+            var existente = await _context.Usuarios
                 .FirstOrDefaultAsync(u => u.UserId == usuario.UserId);
 
-            if (existente != null)
+            if (existente == null)
+                throw new ArgumentException("Usuario no encontrado.");
+
+            // Password: solo se cambia si llega una nueva en claro; si viene vacía o ya
+            // es un hash BCrypt, se conserva la actual.
+            if (!string.IsNullOrWhiteSpace(usuario.Password) && !EsHashBCrypt(usuario.Password))
             {
-                if (string.IsNullOrWhiteSpace(usuario.Password))
-                {
-                    usuario.Password = existente.Password;
-                }
-                else if (!EsHashBCrypt(usuario.Password))
-                {
-                    ValidarComplejidadPassword(usuario.Password);
-                    usuario.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password, workFactor: 11);
-                }
+                ValidarComplejidadPassword(usuario.Password);
+                existente.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password, workFactor: 11);
             }
 
-            _context.Entry(usuario).State = EntityState.Modified;
+            // Campos de texto: solo se sobrescriben si vienen con valor (null/vacío => se conserva).
+            if (!string.IsNullOrWhiteSpace(usuario.Username)) existente.Username = usuario.Username;
+            if (!string.IsNullOrWhiteSpace(usuario.Fullname)) existente.Fullname = usuario.Fullname;
+            if (!string.IsNullOrWhiteSpace(usuario.Nombre)) existente.Nombre = usuario.Nombre;
+            if (!string.IsNullOrWhiteSpace(usuario.Apellido)) existente.Apellido = usuario.Apellido;
+            if (!string.IsNullOrWhiteSpace(usuario.Email)) existente.Email = usuario.Email;
+            if (!string.IsNullOrWhiteSpace(usuario.Documento_Identidad)) existente.Documento_Identidad = usuario.Documento_Identidad;
+            if (!string.IsNullOrWhiteSpace(usuario.Telefono)) existente.Telefono = usuario.Telefono;
+            if (!string.IsNullOrWhiteSpace(usuario.Estado)) existente.Estado = usuario.Estado;
+            if (!string.IsNullOrWhiteSpace(usuario.Direccion)) existente.Direccion = usuario.Direccion;
+
+            // Rol y fecha de nacimiento: solo se tocan si vienen explícitos.
+            if (usuario.Rol_Id.HasValue) existente.Rol_Id = usuario.Rol_Id;
+            if (usuario.Fecha_Nacimiento.HasValue) existente.Fecha_Nacimiento = usuario.Fecha_Nacimiento;
+
+            await _context.SaveChangesAsync();
+
+            // Bitácora: quién (adminId) actualizó a qué usuario (NroRegistro).
+            var ahoraUpd = DateTime.Now;
+            _context.Bitacoras.Add(new Bitacora
+            {
+                Tabla = "usuario",
+                Transaccion = "UPDATE",
+                ID_Usuario = adminId,
+                NroRegistro = existente.UserId,
+                fecha = ahoraUpd,
+                hora = ahoraUpd.TimeOfDay
+            });
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteUsuario(int id)
+        public async Task DeleteUsuario(int id, int? adminId = null)
         {
             var usuario = await _context.Usuarios.FindAsync(id);
             if (usuario != null)
             {
                 _context.Usuarios.Remove(usuario);
                 await _context.SaveChangesAsync();
+
+                // Bitácora: quién (adminId) borró a qué usuario (NroRegistro).
+                // Si no llega adminId, se registra el propio usuario borrado como referencia.
+                var ahora = DateTime.Now;
+                _context.Bitacoras.Add(new Bitacora
+                {
+                    Tabla = "usuario",
+                    Transaccion = "DELETE",
+                    ID_Usuario = adminId ?? id,
+                    NroRegistro = id,
+                    fecha = ahora,
+                    hora = ahora.TimeOfDay
+                });
+                await _context.SaveChangesAsync();
+
             }
         }
 
@@ -138,8 +203,10 @@ namespace MSVenta.Seguridad.Services
 
         public async Task<LoginResult> ValidateAsync(string userName, string password)
         {
+            
             var usuario = await _context.Usuarios
                 .FirstOrDefaultAsync(x => x.Username == userName);
+           
 
             if (usuario == null)
             {
@@ -160,6 +227,7 @@ namespace MSVenta.Seguridad.Services
                     Mensaje = $"Cuenta bloqueada temporalmente por intentos fallidos. Intenta de nuevo en {minutosRestantes} minuto(s)."
                 };
             }
+            
 
             bool passwordCorrecta;
 
@@ -188,7 +256,7 @@ namespace MSVenta.Seguridad.Services
                     usuario.Intentos_Fallidos = 0;
 
                     await _context.SaveChangesAsync();
-
+                    await _historialService.CrearHistorial(usuario.UserId, "LOGIN", false);
                     return new LoginResult
                     {
                         Exitoso = false,
@@ -197,13 +265,16 @@ namespace MSVenta.Seguridad.Services
                 }
 
                 await _context.SaveChangesAsync();
+                await _historialService.CrearHistorial(usuario.UserId, "LOGIN", false);
+
                 return new LoginResult { Exitoso = false, Mensaje = "Usuario o contraseña incorrectos." };
             }
 
             usuario.Intentos_Fallidos = 0;
             await _context.SaveChangesAsync();
-
+            await _historialService.CrearHistorial(usuario.UserId, "LOGIN", true);
             return new LoginResult { Exitoso = true, Usuario = usuario };
+            
         }
     }
 }

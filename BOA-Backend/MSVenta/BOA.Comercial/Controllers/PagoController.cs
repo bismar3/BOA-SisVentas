@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using BOA.Comercial.Models;
 using BOA.Comercial.Services;
 using System;
@@ -19,28 +20,41 @@ namespace BOA.Comercial.Controllers
         private readonly ITicketService _ticketService;
         private readonly ITransaccionService _transaccionService;
         private readonly IClienteService _clienteService;
+        private readonly IBitacoraService _bitacoraService;
         private readonly HttpClient _httpClient;
         private readonly RabbitMQPublisher _rabbitPublisher;
 
-        private const string LIBELULA_APPKEY = "11bb10ce-68ba-4af1-8eb7-4e6624fed729";
-        private const string LIBELULA_URL = "https://api.libelula.bo/rest/deuda/registrar";
-        private const string LIBELULA_VERIFICAR_URL = "https://api.libelula.bo/rest/deuda/consultar_pagos";
-        private const string CALLBACK_URL = "https://daybed-ivory-rewire.ngrok-free.dev/api/pago/callback";
-        private const string URL_RETORNO = "https://daybed-ivory-rewire.ngrok-free.dev/dashboard/cliente/mis-compras";
-        private const string OPERACIONES_URL = "http://localhost:6002";
+        private readonly string _libelulaAppKey;
+        private readonly string _libelulaUrl;
+        private readonly string _libelulaVerificarUrl;
+        private readonly string _callbackUrl;
+        private readonly string _urlRetorno;
+        private readonly string _operacionesUrl;
 
         public PagoController(
             IVentaService ventaService,
             ITicketService ticketService,
             ITransaccionService transaccionService,
-            IClienteService clienteService)
+            IClienteService clienteService,
+            IBitacoraService bitacoraService,
+            IConfiguration configuration)
         {
             _ventaService = ventaService;
             _ticketService = ticketService;
             _transaccionService = transaccionService;
             _clienteService = clienteService;
+            _bitacoraService = bitacoraService;
             _httpClient = new HttpClient();
             _rabbitPublisher = new RabbitMQPublisher();
+
+            _libelulaAppKey = configuration["Libelula:AppKey"];
+            _libelulaUrl = configuration["Libelula:UrlRegistrar"];
+            _libelulaVerificarUrl = configuration["Libelula:UrlVerificar"];
+            _urlRetorno = configuration["Libelula:UrlRetorno"];
+            _operacionesUrl = configuration["ServiciosUrls:Operaciones"];
+
+            var callbackBaseUrl = configuration["Libelula:CallbackBaseUrl"];
+            _callbackUrl = callbackBaseUrl.TrimEnd('/') + "/api/pago/callback";
         }
 
         [HttpPost("registrar")]
@@ -48,9 +62,9 @@ namespace BOA.Comercial.Controllers
         {
             try
             {
-                var cliente = await _clienteService.GetById(request.ClienteId);
+                var cliente = await _clienteService.GetByUsuarioId(request.ClienteId);
                 if (cliente == null)
-                    return NotFound(new { message = "Cliente no encontrado." });
+                    return NotFound(new { message = "No existe un cliente asociado a este usuario." });
 
                 var codigoVenta = "VTA-" + Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
 
@@ -58,13 +72,30 @@ namespace BOA.Comercial.Controllers
                 {
                     Codigo_Venta = codigoVenta,
                     Programacion_Vuelo_Id = request.ProgramacionVueloId,
-                    Cliente_Id = request.ClienteId,
+                    Cliente_Id = cliente.Id,
                     Monto_Total = request.MontoTotal,
                     Estado = "Pendiente"
                 };
                 var ventaCreada = await _ventaService.Create(venta);
 
-                // Crear ticket con estado Emitido
+
+                
+                var ahora = DateTime.Now;
+                _rabbitPublisher.PublicarBitacora(new
+                {
+                    Tabla = "ventas",
+                    Transaccion = "INSERT",
+                    ID_Usuario = request.ClienteId,
+                    Fecha = ahora,
+                    // Como string: System.Text.Json serializa TimeSpan como objeto, no como "HH:mm:ss".
+                    Hora = ahora.ToString("HH:mm:ss"),
+                    NroRegistro = ventaCreada.Id
+                });
+
+        
+
+
+
                 var numeroTicket = "TKT-" + Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
                 var ticket = new Ticket
                 {
@@ -79,11 +110,11 @@ namespace BOA.Comercial.Controllers
 
                 var payload = new
                 {
-                    appkey = LIBELULA_APPKEY,
+                    appkey = _libelulaAppKey,
                     email_cliente = cliente.Email,
                     identificador = codigoVenta,
-                    callback_url = CALLBACK_URL,
-                    url_retorno = URL_RETORNO,
+                    callback_url = _callbackUrl,
+                    url_retorno = _urlRetorno,
                     descripcion = $"Compra de ticket BOA - Vuelo {request.ProgramacionVueloId}",
                     nombre_cliente = cliente.Nombre,
                     apellido_cliente = cliente.Apellido,
@@ -97,7 +128,7 @@ namespace BOA.Comercial.Controllers
 
                 try
                 {
-                    var response = await _httpClient.PostAsync(LIBELULA_URL, content);
+                    var response = await _httpClient.PostAsync(_libelulaUrl, content);
                     var responseBody = await response.Content.ReadAsStringAsync();
                     var libelulaResponse = JsonSerializer.Deserialize<JsonElement>(responseBody);
 
@@ -126,32 +157,34 @@ namespace BOA.Comercial.Controllers
                         });
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
-                    var simId = "SIM-" + Guid.NewGuid().ToString("N").Substring(0, 12).ToUpper();
-
-                    var transaccionSim = new Transaccion
-                    {
-                        Venta_Id = ventaCreada.Id,
-                        Referencia = simId,
-                        Monto = request.MontoTotal,
-                        Metodo_Pago = "QR",
-                        Estado = "Pendiente"
-                    };
-                    await _transaccionService.Create(transaccionSim);
-
-                    return Ok(new
-                    {
-                        ventaId = ventaCreada.Id,
-                        codigoVenta = codigoVenta,
-                        idTransaccion = simId,
-                        urlPasarela = (string)null,
-                        qrUrl = (string)null,
-                        modo = "simulacion"
-                    });
+                    Console.WriteLine($"[Pago] Libélula no disponible ({ex.Message}); se usa modo simulación.");
                 }
 
-                return StatusCode(500, new { message = "Error al registrar pago en Libélula." });
+                // Fallback: si Libélula falla (excepción o error != 0), la venta queda en modo
+                // simulación. Se confirma luego con "Verificar pago manualmente" → callback.
+                var simId = "SIM-" + Guid.NewGuid().ToString("N").Substring(0, 12).ToUpper();
+
+                var transaccionSim = new Transaccion
+                {
+                    Venta_Id = ventaCreada.Id,
+                    Referencia = simId,
+                    Monto = request.MontoTotal,
+                    Metodo_Pago = "QR",
+                    Estado = "Pendiente"
+                };
+                await _transaccionService.Create(transaccionSim);
+
+                return Ok(new
+                {
+                    ventaId = ventaCreada.Id,
+                    codigoVenta = codigoVenta,
+                    idTransaccion = simId,
+                    urlPasarela = (string)null,
+                    qrUrl = (string)null,
+                    modo = "simulacion"
+                });
             }
             catch (Exception ex)
             {
@@ -177,6 +210,20 @@ namespace BOA.Comercial.Controllers
                 venta.Estado = "Confirmada";
                 await _ventaService.Update(venta);
 
+                // Bitácora: venta confirmada (UPDATE) — misma vía RabbitMQ que el INSERT.
+                // ID_Usuario se resuelve al id de usuario (no el de cliente), igual que el INSERT.
+                var clienteVenta = await _clienteService.GetById(venta.Cliente_Id);
+                var ahoraConfirmada = DateTime.Now;
+                _rabbitPublisher.PublicarBitacora(new
+                {
+                    Tabla = "ventas",
+                    Transaccion = "UPDATE",
+                    ID_Usuario = clienteVenta?.Usuario_Id,
+                    Fecha = ahoraConfirmada,
+                    Hora = ahoraConfirmada.ToString("HH:mm:ss"),
+                    NroRegistro = venta.Id
+                });
+
                 // Actualizar transacción a Aprobado
                 var transacciones = await _transaccionService.GetAll();
                 var transaccion = transacciones.FirstOrDefault(t => t.Venta_Id == venta.Id);
@@ -194,7 +241,7 @@ namespace BOA.Comercial.Controllers
                     try
                     {
                         await _httpClient.PutAsync(
-                            $"{OPERACIONES_URL}/api/asiento/{ticket.Asiento_Id}/ocupar",
+                            $"{_operacionesUrl}/api/asiento/{ticket.Asiento_Id}/ocupar",
                             null
                         );
                     }
@@ -238,14 +285,14 @@ namespace BOA.Comercial.Controllers
 
                 var payload = new
                 {
-                    appkey = LIBELULA_APPKEY,
+                    appkey = _libelulaAppKey,
                     fecha_inicial = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd HH:mm:ss"),
                     fecha_final = DateTime.Now.AddHours(1).ToString("yyyy-MM-dd HH:mm:ss")
                 };
 
                 var json = JsonSerializer.Serialize(payload);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
-                var response = await _httpClient.PostAsync(LIBELULA_VERIFICAR_URL, content);
+                var response = await _httpClient.PostAsync(_libelulaVerificarUrl, content);
                 var responseBody = await response.Content.ReadAsStringAsync();
                 var libelulaResponse = JsonSerializer.Deserialize<JsonElement>(responseBody);
 

@@ -17,6 +17,8 @@ namespace BOA.Comercial.Services
             await _context.Clientes.ToListAsync();
         public async Task<Cliente> GetById(int id) =>
             await _context.Clientes.FindAsync(id);
+        public async Task<Cliente> GetByUsuarioId(int usuarioId) =>
+            await _context.Clientes.FirstOrDefaultAsync(c => c.Usuario_Id == usuarioId);
         public async Task Create(Cliente c)
         {
             _context.Clientes.Add(c);

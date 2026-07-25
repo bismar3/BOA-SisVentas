@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj": {}
+    "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj": {
+    "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj",
+        "projectUniqueName": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj",
         "projectName": "BOA.Gateway",
-        "projectPath": "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj",
-        "packagesPath": "C:\\Users\\Mi DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mi DELL\\Documents\\BOA\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\obj\\",
+        "projectPath": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\BOA.Gateway.csproj",
+        "packagesPath": "C:\\Users\\Antonio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Gateway\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mi DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

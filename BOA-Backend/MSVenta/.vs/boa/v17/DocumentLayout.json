@@ -1,198 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\",
+  "WorkspaceRootPath": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|c:\\users\\antonio\\microservicios\\boa-sisventas\\boa-backend\\msventa\\msventa.seguridad\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|solutionrelative:msventa.seguridad\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|c:\\users\\antonio\\microservicios\\boa-sisventas\\boa-backend\\msventa\\msventa.seguridad\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|solutionrelative:msventa.seguridad\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|c:\\users\\antonio\\microservicios\\boa-sisventas\\boa-backend\\msventa\\msventa.seguridad\\models\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|solutionrelative:msventa.seguridad\\models\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|c:\\users\\antonio\\microservicios\\boa-sisventas\\boa-backend\\msventa\\msventa.seguridad\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|solutionrelative:msventa.seguridad\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|solutionrelative:msventa.gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|solutionrelative:msventa.gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|solutionrelative:msventa.gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.gateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7B71E63-1D95-47D3-93CE-8BF487E1D19F}|MSVenta.Gateway\\MSVenta.Gateway.csproj|solutionrelative:msventa.gateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\productoalmacenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\productoalmacenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\controllers\\productoalmacencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\controllers\\productoalmacencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\iventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\iventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\ialmecenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\ialmecenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\controllers\\almacencontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\controllers\\almacencontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\repositories\\contextdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\repositories\\contextdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\models\\almacen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\models\\almacen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\almacenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\almacenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\controllers\\permisocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\controllers\\permisocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\controllers\\rolpermisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\controllers\\rolpermisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\services\\rolpermisoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\services\\rolpermisoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\models\\rolpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\models\\rolpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\services\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\services\\rolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\detalleventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\detalleventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\models\\rolpermisousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\models\\rolpermisousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\services\\permisoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\services\\permisoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\models\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\models\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\services\\rolpermisousuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\services\\rolpermisousuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\controllers\\detalleventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\controllers\\detalleventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\idetalleventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\idetalleventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.venta\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B72C492-2E80-4754-A7A2-943DD9868670}|MSVenta.Venta\\MSVenta.Venta.csproj|solutionrelative:msventa.venta\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|c:\\users\\ectua\\desktop\\proyecto sisventas back-front ult\\sisventas\\sisventas\\msventa\\msventa.seguridad\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\MSVenta.Seguridad.csproj|solutionrelative:msventa.seguridad\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|c:\\users\\antonio\\microservicios\\boa-sisventas\\boa-backend\\msventa\\msventa.seguridad\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4455DC-89B2-487B-8E2A-DFF8F4B7518C}|MSVenta.Seguridad\\BOA.Seguridad.csproj|solutionrelative:msventa.seguridad\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -201,593 +29,69 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 284,
+          "DockedWidth": 247,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Startup.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Startup.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Startup.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Startup.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAzwCQAAAASAAAAAAAAAA==",
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "MSVenta.Seguridad\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAowF4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T00:07:08.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Program.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Program.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Program.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T00:07:05.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Program.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Program.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Program.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T00:05:59.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\appsettings.json",
-              "RelativeDocumentMoniker": "MSVenta.Gateway\\appsettings.json",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\appsettings.json",
-              "RelativeToolTip": "MSVenta.Gateway\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-22T23:09:37.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\appsettings.json",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\appsettings.json",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\appsettings.json",
-              "RelativeToolTip": "MSVenta.Seguridad\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-14T20:24:41.588Z",
+              "WhenOpened": "2026-07-24T23:20:07.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\appsettings.json",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\appsettings.json",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\appsettings.json",
-              "RelativeToolTip": "MSVenta.Venta\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-15T20:23:37.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ocelot.json",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\ocelot.json",
-              "RelativeDocumentMoniker": "MSVenta.Gateway\\ocelot.json",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\ocelot.json",
-              "RelativeToolTip": "MSVenta.Gateway\\ocelot.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-03T16:11:03.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\Startup.cs",
-              "RelativeDocumentMoniker": "MSVenta.Gateway\\Startup.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\Startup.cs",
-              "RelativeToolTip": "MSVenta.Gateway\\Startup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Historial.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Models\\Historial.cs",
+              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Models\\Historial.cs",
+              "ToolTip": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Models\\Historial.cs",
+              "RelativeToolTip": "MSVenta.Seguridad\\Models\\Historial.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T23:26:08.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-24T23:18:17.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\Program.cs",
-              "RelativeDocumentMoniker": "MSVenta.Gateway\\Program.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Gateway\\Program.cs",
-              "RelativeToolTip": "MSVenta.Gateway\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T20:27:20.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductoService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\ProductoService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\ProductoService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\ProductoService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\ProductoService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAwEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:02:59.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AlmacenController .cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\AlmacenController .cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Controllers\\AlmacenController .cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\AlmacenController .cs",
-              "RelativeToolTip": "MSVenta.Venta\\Controllers\\AlmacenController .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T23:28:52.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IAlmecenService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IAlmecenService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\IAlmecenService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IAlmecenService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\IAlmecenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:52:32.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "VentaService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\VentaService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\VentaService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\VentaService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\VentaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:32:57.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Almacen.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\Almacen.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Models\\Almacen.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\Almacen.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Models\\Almacen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:49:32.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VentaController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\VentaController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Controllers\\VentaController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\VentaController.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Controllers\\VentaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:33:18.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowGgAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T15:00:09.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IVentaService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IVentaService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\IVentaService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IVentaService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\IVentaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T15:03:18.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\ClienteService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\ClienteService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\ClienteService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwDkAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:21:43.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductoAlmacenService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\ProductoAlmacenService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\ProductoAlmacenService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\ProductoAlmacenService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\ProductoAlmacenService.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAYwNsAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:01:56.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductoAlmacenController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\ProductoAlmacenController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Controllers\\ProductoAlmacenController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\ProductoAlmacenController.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Controllers\\ProductoAlmacenController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAYwHYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:01:49.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAiwFkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:19:54.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DetalleVenta.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\DetalleVenta.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Models\\DetalleVenta.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\DetalleVenta.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Models\\DetalleVenta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:32:23.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\Producto.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Models\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T15:03:59.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ContextDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Repositories\\ContextDatabase.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Repositories\\ContextDatabase.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Repositories\\ContextDatabase.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Repositories\\ContextDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:50:22.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AlmacenService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\AlmacenService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\AlmacenService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\AlmacenService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\AlmacenService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:48:06.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "PermisoController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\PermisoController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Controllers\\PermisoController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\PermisoController.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Controllers\\PermisoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T14:54:30.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "RolPermisoUsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\RolPermisoUsuarioService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Services\\RolPermisoUsuarioService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\RolPermisoUsuarioService.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Services\\RolPermisoUsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T23:47:36.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Services\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\UsuarioService.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAswHkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T14:55:04.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\UsuarioService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwBsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:23:52.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwEQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T14:54:31.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IUsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\IUsuarioService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Services\\IUsuarioService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\IUsuarioService.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Services\\IUsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T02:15:24.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T15:21:23.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "RolPermisoService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\RolPermisoService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Services\\RolPermisoService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\RolPermisoService.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Services\\RolPermisoService.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAiwE0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T02:05:52.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RolService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\RolService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Services\\RolService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\RolService.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Services\\RolService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowBkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T02:13:56.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "DetalleVentaController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\DetalleVentaController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Controllers\\DetalleVentaController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Controllers\\DetalleVentaController.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Controllers\\DetalleVentaController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:32:27.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "RolPermisosController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\RolPermisosController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Controllers\\RolPermisosController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\RolPermisosController.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Controllers\\RolPermisosController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwCgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:32:33.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "RolPermisoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\RolPermisoUsuario.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Models\\RolPermisoUsuario.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\RolPermisoUsuario.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Models\\RolPermisoUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T02:15:16.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "RolPermiso.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\RolPermiso.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Models\\RolPermiso.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\RolPermiso.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Models\\RolPermiso.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:31:21.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "DetalleVentaService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\DetalleVentaService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\DetalleVentaService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\DetalleVentaService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\DetalleVentaService.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAawBgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:08:59.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\Rol.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Models\\Rol.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\Rol.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Models\\Rol.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T20:52:19.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\Usuario.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:21:18.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "PermisoService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\PermisoService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Services\\PermisoService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Services\\PermisoService.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Services\\PermisoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T02:07:43.066Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Permiso.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\Permiso.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Models\\Permiso.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Models\\Permiso.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Models\\Permiso.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T23:47:41.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Controllers\\RolesController.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "MSVenta.Seguridad\\Controllers\\RolesController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwCgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T20:52:14.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "IDetalleVentaService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IDetalleVentaService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\IDetalleVentaService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IDetalleVentaService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\IDetalleVentaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:32:31.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Venta.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\Venta.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Models\\Venta.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Models\\Venta.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Models\\Venta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:29:51.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "IUsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IUsuarioService.cs",
-              "RelativeDocumentMoniker": "MSVenta.Venta\\Services\\IUsuarioService.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Venta\\Services\\IUsuarioService.cs",
-              "RelativeToolTip": "MSVenta.Venta\\Services\\IUsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:23:03.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 3,
               "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\DTOs\\UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\DTOs\\UsuarioDTO.cs",
               "RelativeDocumentMoniker": "MSVenta.Seguridad\\DTOs\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\ectua\\Desktop\\PROYECTO SisVentas Back-Front ult\\SisVentas\\SisVentas\\MSVenta\\MSVenta.Seguridad\\DTOs\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\DTOs\\UsuarioDTO.cs",
               "RelativeToolTip": "MSVenta.Seguridad\\DTOs\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA5wBIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:21:00.95Z"
+              "WhenOpened": "2026-07-24T23:12:45.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Models\\Usuario.cs",
+              "RelativeToolTip": "MSVenta.Seguridad\\Models\\Usuario.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA2wBsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T22:51:42.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Startup.cs",
+              "RelativeDocumentMoniker": "MSVenta.Seguridad\\Startup.cs",
+              "ToolTip": "C:\\Users\\Antonio\\Microservicios\\BOA-SisVentas\\BOA-Backend\\MSVenta\\MSVenta.Seguridad\\Startup.cs",
+              "RelativeToolTip": "MSVenta.Seguridad\\Startup.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T03:13:58.128Z"
             }
           ]
         }

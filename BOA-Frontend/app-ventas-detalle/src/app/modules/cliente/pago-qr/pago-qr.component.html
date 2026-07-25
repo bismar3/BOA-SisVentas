@@ -119,7 +119,7 @@
 
         <button (click)="verificarPago()"
           class="mt-4 px-6 py-2 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-600 transition-all w-full">
-          🔄 Verificar pago manualmente
+          {{ modo === 'simulacion' ? '✅ Simular pago y confirmar venta' : '🔄 Verificar pago manualmente' }}
         </button>
       </div>
 

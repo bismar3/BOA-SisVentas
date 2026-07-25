@@ -19,6 +19,14 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
+  // Resuelve la PK del cliente (Comercial) a partir del userId (Seguridad).
+  // Devuelve el objeto Cliente; 404 si no existe uno asociado a ese usuario.
+  public getClienteByUsuario(usuarioId: number): Observable<any> {
+    const token = sessionStorage.getItem('token') || '';
+    const headers = new HttpHeaders({ 'Authorization': `Bearer ${token}` });
+    return this.http.get<any>(`${environment.URL_SERVICIOS}/cliente/por-usuario/${usuarioId}`, { headers });
+  }
+
   public getToken(user: User): Observable<User> {
     return this.http.post<any>(this.urlAuth, user, httpOptions).pipe(
       map((res: HttpResponse<any>) => {

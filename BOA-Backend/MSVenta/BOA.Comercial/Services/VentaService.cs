@@ -95,6 +95,7 @@ namespace BOA.Comercial.Services
 
         public async Task<Venta> Create(Venta v)
         {
+            v.Created_At = System.DateTime.Now;
             _context.Ventas.Add(v);
             await _context.SaveChangesAsync();
             return v;
@@ -111,6 +112,12 @@ namespace BOA.Comercial.Services
             var item = await _context.Ventas.FindAsync(id);
             if (item != null)
             {
+                // Borrar dependencias primero: devoluciones y tickets tienen FK a ventas
+                // (transacciones no tiene FK, pero se limpia para no dejar huérfanos).
+                _context.Devoluciones.RemoveRange(_context.Devoluciones.Where(d => d.Venta_Id == id));
+                _context.Tickets.RemoveRange(_context.Tickets.Where(t => t.Venta_Id == id));
+                _context.Transacciones.RemoveRange(_context.Transacciones.Where(t => t.Venta_Id == id));
+
                 _context.Ventas.Remove(item);
                 await _context.SaveChangesAsync();
             }

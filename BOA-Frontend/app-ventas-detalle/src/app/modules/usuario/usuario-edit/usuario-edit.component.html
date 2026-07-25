@@ -96,6 +96,21 @@
     </div>
 
     <div>
+      <label for="rol_Id" class="block text-lg font-semibold text-white">Rol</label>
+      <select
+        id="rol_Id"
+        class="w-full mt-2 px-5 py-3 bg-gray-800 text-white rounded-lg border border-gray-700 shadow-lg focus:ring-2 focus:ring-cyan-500 focus:outline-none transition duration-300"
+        formControlName="rol_Id"
+      >
+        <option [ngValue]="null" disabled>Seleccioná un rol…</option>
+        <option *ngFor="let rol of roles" [ngValue]="rol.iD_Rol">{{ rol.nombre_Rol }}</option>
+      </select>
+      <div *ngIf="userForm.get('rol_Id')?.invalid && userForm.get('rol_Id')?.touched" class="text-red-500 text-sm mt-2">
+        Debés asignar un rol.
+      </div>
+    </div>
+
+    <div>
       <label for="estado" class="block text-lg font-semibold text-white">Estado</label>
       <select
         id="estado"

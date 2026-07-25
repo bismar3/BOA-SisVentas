@@ -26,6 +26,8 @@
           <th class="px-4 py-3 text-left">Email</th>
           <th class="px-4 py-3 text-left">Roles</th>
           <th class="px-4 py-3 text-left">Estado</th>
+          <th class="px-4 py-3 text-left">Direccion</th>
+          <th class="px-4 py-3 text-left">Fecha de Creación</th>
           <th class="px-4 py-3 text-left">Acciones</th>
         </tr>
       </thead>
@@ -54,6 +56,12 @@
               {{ user.estado || 'Activo' }}
             </span>
           </td>
+          <td class="px-4 py-3 text-left text-gray-300">
+            {{ user.direccion || '—' }}
+          </td>
+          <td class="px-4 py-3 text-left text-gray-300">
+            {{ user.fecha_Creacion ? (user.fecha_Creacion | date:'dd/MM/yyyy HH:mm') : '—' }}
+          </td>
           <td class="px-4 py-3 text-left">
             <div class="flex gap-2">
               <a [routerLink]="['/dashboard/user/edit', user.userId]"
@@ -68,7 +76,7 @@
           </td>
         </tr>
         <tr *ngIf="filteredUsers.length === 0">
-          <td colspan="7" class="px-4 py-6 text-gray-400">No se encontraron usuarios.</td>
+          <td colspan="9" class="px-4 py-6 text-gray-400">No se encontraron usuarios.</td>
         </tr>
       </tbody>
     </table>

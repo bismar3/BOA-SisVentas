@@ -13,9 +13,12 @@ namespace MSVenta.Seguridad.Controllers
     public class UsuarioController : Controller
     {
         private readonly IUsuarioService _usuarioService;
+        private readonly RabbitMQPublisher _rabbitPublisher;
+
         public UsuarioController(IUsuarioService usuarioService)
         {
             _usuarioService = usuarioService;
+            _rabbitPublisher = new RabbitMQPublisher();
         }
 
         [HttpGet]
@@ -33,11 +36,15 @@ namespace MSVenta.Seguridad.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateUsuario(Usuario usuario)
+        public async Task<ActionResult> CreateUsuario(Usuario usuario,[FromQuery] int? adminId)
         {
             try
             {
-                var createdUsuario = await _usuarioService.CreateUsuario(usuario);
+                // Creación por admin: el rol debe ser explícito (nada de default silencioso).
+                if (usuario.Rol_Id == null)
+                    return BadRequest(new { message = "Debe asignar un rol al usuario." });
+
+                var createdUsuario = await _usuarioService.CreateUsuario(usuario, adminId);
                 return CreatedAtAction(nameof(GetUsuario), new { id = createdUsuario.UserId }, createdUsuario);
             }
             catch (ArgumentException ex)
@@ -61,6 +68,19 @@ namespace MSVenta.Seguridad.Controllers
                 usuario.Intentos_Fallidos = 0;
                 usuario.Veces_Bloqueado = 0;
                 var creado = await _usuarioService.CreateUsuario(usuario);
+
+                // Publicar evento autosuficiente para que Comercial cree el Cliente asociado
+                _rabbitPublisher.PublicarUsuarioRegistrado(new
+                {
+                    UsuarioId = creado.UserId,
+                    Nombre = creado.Nombre,
+                    Apellido = creado.Apellido,
+                    Email = creado.Email,
+                    Documento_Identidad = creado.Documento_Identidad,
+                    Telefono = creado.Telefono,
+                    Fecha_Nacimiento = creado.Fecha_Nacimiento
+                });
+
                 return Ok(new { message = "Usuario registrado exitosamente.", data = creado });
             }
             catch (ArgumentException ex)
@@ -74,12 +94,12 @@ namespace MSVenta.Seguridad.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUsuario(int id, Usuario usuario)
+        public async Task<IActionResult> UpdateUsuario(int id, Usuario usuario, [FromQuery] int? adminId)
         {
             if (id != usuario.UserId) return BadRequest();
             try
             {
-                await _usuarioService.UpdateUsuario(usuario);
+                await _usuarioService.UpdateUsuario(usuario, adminId);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -94,9 +114,9 @@ namespace MSVenta.Seguridad.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsuario(int id)
+        public async Task<IActionResult> DeleteUsuario(int id, [FromQuery] int? adminId)
         {
-            await _usuarioService.DeleteUsuario(id);
+            await _usuarioService.DeleteUsuario(id, adminId);
             return NoContent();
         }
 
@@ -114,6 +134,10 @@ namespace MSVenta.Seguridad.Controllers
             if (customer.UserId != id)
                 return BadRequest(new { Message = "El usuario no es válido." });
             return Ok(new { Message = "El usuario es válido." });
+
+            
         }
+        
+       
     }
 }

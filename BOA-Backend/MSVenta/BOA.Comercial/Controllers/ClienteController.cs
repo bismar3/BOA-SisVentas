@@ -43,6 +43,21 @@ namespace BOA.Comercial.Controllers
                 return StatusCode(500, new { message = ex.Message });
             }
         }
+        [HttpGet("por-usuario/{usuarioId}")]
+        public async Task<ActionResult> GetByUsuarioId(int usuarioId)
+        {
+            try
+            {
+                var item = await _clienteService.GetByUsuarioId(usuarioId);
+                if (item == null)
+                    return NotFound(new { message = "No existe un cliente asociado a este usuario." });
+                return Ok(item);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Cliente cliente)
         {

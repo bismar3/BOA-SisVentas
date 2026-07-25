@@ -21,18 +21,48 @@
         </div>
       </div>
 
-      <!-- Nombre Completo -->
+      <!-- Nombre -->
       <div>
-        <label for="fullname" class="block text-sm font-medium text-gray-300">Nombre Completo</label>
+        <label for="nombre" class="block text-sm font-medium text-gray-300">Nombre</label>
         <input
           type="text"
-          id="fullname"
+          id="nombre"
           class="w-full px-4 py-3 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-lg shadow-md focus:ring-2 focus:ring-cyan-500 focus:outline-none text-gray-200 placeholder-gray-400 transition-all duration-300"
-          formControlName="fullname"
-          placeholder="Nombre y apellidos"
+          formControlName="nombre"
+          placeholder="Nombre(s)"
         />
-        <div *ngIf="userForm.get('fullname')?.invalid && userForm.get('fullname')?.touched" class="text-red-400 text-sm mt-1">
-          El nombre completo es requerido (máximo 30 caracteres).
+        <div *ngIf="userForm.get('nombre')?.invalid && userForm.get('nombre')?.touched" class="text-red-400 text-sm mt-1">
+          El nombre es requerido (máximo 30 caracteres).
+        </div>
+      </div>
+
+      <!-- Apellido -->
+      <div>
+        <label for="apellido" class="block text-sm font-medium text-gray-300">Apellido</label>
+        <input
+          type="text"
+          id="apellido"
+          class="w-full px-4 py-3 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-lg shadow-md focus:ring-2 focus:ring-cyan-500 focus:outline-none text-gray-200 placeholder-gray-400 transition-all duration-300"
+          formControlName="apellido"
+          placeholder="Apellido(s)"
+        />
+        <div *ngIf="userForm.get('apellido')?.invalid && userForm.get('apellido')?.touched" class="text-red-400 text-sm mt-1">
+          El apellido es requerido (máximo 30 caracteres).
+        </div>
+      </div>
+
+      <!-- Direccion -->
+      <div>
+        <label for="direccion" class="block text-sm font-medium text-gray-300">Dirección</label>
+        <input
+          type="text"
+          id="direccion"
+          class="w-full px-4 py-3 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-lg shadow-md focus:ring-2 focus:ring-cyan-500 focus:outline-none text-gray-200 placeholder-gray-400 transition-all duration-300"
+          formControlName="direccion"
+          placeholder="Dirección del usuario"
+        />
+        <div *ngIf="userForm.get('direccion')?.invalid && userForm.get('direccion')?.touched" class="text-red-400 text-sm mt-1">
+          La dirección es requerida (máximo 100 caracteres).
         </div>
       </div>
 
@@ -99,6 +129,22 @@
           class="w-full px-4 py-3 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-lg shadow-md focus:ring-2 focus:ring-cyan-500 focus:outline-none text-gray-200 transition-all duration-300"
           formControlName="fecha_Nacimiento"
         />
+      </div>
+
+      <!-- Rol -->
+      <div>
+        <label for="rol_Id" class="block text-sm font-medium text-gray-300">Rol</label>
+        <select
+          id="rol_Id"
+          class="w-full px-4 py-3 bg-gray-800 bg-opacity-50 border border-gray-700 rounded-lg shadow-md focus:ring-2 focus:ring-cyan-500 focus:outline-none text-gray-200 transition-all duration-300"
+          formControlName="rol_Id"
+        >
+          <option [ngValue]="null" disabled>Seleccioná un rol…</option>
+          <option *ngFor="let rol of roles" [ngValue]="rol.iD_Rol">{{ rol.nombre_Rol }}</option>
+        </select>
+        <div *ngIf="userForm.get('rol_Id')?.invalid && userForm.get('rol_Id')?.touched" class="text-red-400 text-sm mt-1">
+          Debés asignar un rol.
+        </div>
       </div>
 
       <!-- Estado -->

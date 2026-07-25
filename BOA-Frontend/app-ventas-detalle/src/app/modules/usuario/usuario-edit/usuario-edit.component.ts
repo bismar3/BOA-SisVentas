@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UsuarioService } from '../usuario.service';
+import { RolService } from '../../rol/rol.service';
+import { Rol } from '../../../interfaces/rol.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
@@ -17,10 +19,12 @@ export class UsuarioEditComponent implements OnInit {
   userForm!: FormGroup;
   userId!: number;
   cargando: boolean = true;
+  roles: Rol[] = [];
 
   constructor(
     private fb: FormBuilder,
     private usuarioService: UsuarioService,
+    private rolService: RolService,
     private router: Router,
     private route: ActivatedRoute,
     private cdr: ChangeDetectorRef
@@ -38,6 +42,14 @@ export class UsuarioEditComponent implements OnInit {
       telefono: [''],
       fecha_Nacimiento: [''],
       estado: ['Activo'],
+      rol_Id: [null, [Validators.required]],
+    });
+
+    this.rolService.getRoles().subscribe({
+      next: (roles) => {
+        this.roles = roles;
+        this.cdr.markForCheck();
+      }
     });
 
     this.usuarioService.getUsuarioById(this.userId).subscribe({
@@ -50,6 +62,7 @@ export class UsuarioEditComponent implements OnInit {
           telefono: user.telefono,
           fecha_Nacimiento: this.soloFecha(user.fecha_Nacimiento),
           estado: user.estado || 'Activo',
+          rol_Id: user.rol_Id ?? null,
         });
         this.cargando = false;
         this.cdr.markForCheck();
@@ -67,18 +80,24 @@ export class UsuarioEditComponent implements OnInit {
     return valor.substring(0, 10);
   }
 
-  save(): void {
-    if (this.userForm.invalid) return;
+save(): void {
+  if (this.userForm.invalid) return;
 
-    const valores = { ...this.userForm.value };
-    if (!valores.password) {
-      delete valores.password;
-    }
+  const valores = { ...this.userForm.value };
+  if (!valores.password) {
+    delete valores.password;
+  }
+  if (!valores.fecha_Nacimiento) {
+    valores.fecha_Nacimiento = null;
+  }
+  if (valores.rol_Id != null) {
+    valores.rol_Id = Number(valores.rol_Id);
+  }
 
-    const usuarioActualizado = {
-      userId: this.userId,
-      ...valores
-    };
+  const usuarioActualizado = {
+    userId: this.userId,
+    ...valores
+  };
 
     this.usuarioService.updateUsuario(this.userId, usuarioActualizado).subscribe({
       next: () => {
@@ -92,12 +111,13 @@ export class UsuarioEditComponent implements OnInit {
         });
       },
       error: (err) => {
-        console.error(err);
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Hubo un problema al actualizar el usuario.',
-          confirmButtonText: 'OK'
+   console.error(err);
+  const mensajeReal = err.error?.message || 'Hubo un problema al actualizar el usuario.';
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: mensajeReal,
+    confirmButtonText: 'OK'
         });
       }
     });

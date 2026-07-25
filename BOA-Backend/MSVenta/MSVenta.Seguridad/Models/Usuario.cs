@@ -22,7 +22,10 @@ namespace MSVenta.Seguridad.Models
         public int Intentos_Fallidos { get; set; }
         public int Veces_Bloqueado { get; set; }
         public DateTime? Bloqueado_Hasta { get; set; }
+        public DateTime? Fecha_Creacion { get; set; }
+        public string? Direccion { get; set; }
         public Rol Rol { get; set; }
+        public TimeSpan? hora { get; set; }
         public ICollection<RolPermisoUsuario> RolPermisoUsuarios { get; set; }
     }
 }

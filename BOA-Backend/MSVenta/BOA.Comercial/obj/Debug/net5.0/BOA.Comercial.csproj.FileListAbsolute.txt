@@ -41,3 +41,46 @@ C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.
 C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.Threading.Channels.dll
 C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.Threading.RateLimiting.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\appsettings.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\BOA.Comercial.exe
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\BOA.Comercial.deps.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\BOA.Comercial.runtimeconfig.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\BOA.Comercial.runtimeconfig.dev.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\BOA.Comercial.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\BOA.Comercial.pdb
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\RabbitMQ.Client.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.Threading.Channels.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\bin\Debug\net5.0\System.Threading.RateLimiting.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.csproj.AssemblyReference.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.AssemblyInfoInputs.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.AssemblyInfo.cs
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\staticwebassets\BOA.Comercial.StaticWebAssets.Manifest.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\staticwebassets\BOA.Comercial.StaticWebAssets.xml
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\scopedcss\bundle\BOA.Comercial.styles.css
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.RazorTargetAssemblyInfo.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\ref\BOA.Comercial.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.pdb
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Comercial.genruntimeconfig.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\BOA.Come.5796EC4B.Up2Date
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\BOA.Comercial\obj\Debug\net5.0\refint\BOA.Comercial.dll

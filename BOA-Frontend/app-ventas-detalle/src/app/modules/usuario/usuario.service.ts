@@ -19,6 +19,16 @@ export class UsuarioService {
 
   constructor(private http: HttpClient) {}
 
+  // Id del usuario logueado (para registrar en bitácora quién hizo la acción).
+  private getAdminId(): number | undefined {
+    try {
+      const user = JSON.parse(sessionStorage.getItem('user') || '{}');
+      return user?.userId;
+    } catch {
+      return undefined;
+    }
+  }
+
   getUsuarios(): Observable<User[]> {
     const token = sessionStorage.getItem('token');
     if (token) {
@@ -68,8 +78,10 @@ export class UsuarioService {
   updateUsuario(id: number, usuario: User): Observable<User> {
     const token = sessionStorage.getItem('token');
     if (token) {
+      const adminId = this.getAdminId();
+      const url = adminId ? `${this.apiUrl}/${id}?adminId=${adminId}` : `${this.apiUrl}/${id}`;
       return this.http
-        .put<User>(`${this.apiUrl}/${id}`, usuario, httpOptions(token))
+        .put<User>(url, usuario, httpOptions(token))
         .pipe(catchError(this.handleError('updateUsuario', usuario)));
     } else {
       console.error('No hay token disponible');
@@ -80,8 +92,10 @@ export class UsuarioService {
   deleteUsuario(id: number): Observable<void> {
     const token = sessionStorage.getItem('token');
     if (token) {
+      const adminId = this.getAdminId();
+      const url = adminId ? `${this.apiUrl}/${id}?adminId=${adminId}` : `${this.apiUrl}/${id}`;
       return this.http
-        .delete<void>(`${this.apiUrl}/${id}`, httpOptions(token))
+        .delete<void>(url, httpOptions(token))
         .pipe(catchError(this.handleError<void>('deleteUsuario')));
     } else {
       console.error('No hay token disponible');

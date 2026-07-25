@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace MSVenta.Seguridad.DTOs
 {
@@ -14,6 +15,9 @@ namespace MSVenta.Seguridad.DTOs
         public string Telefono { get; set; }
         public string Estado { get; set; }
         public int? Rol_Id { get; set; }
+        public DateTime? Fecha_Creacion { get; set; }
+        public TimeSpan? hora { get; set; }
+        public string? Direccion { get; set; }
         public List<RolDTO> Roles { get; set; }
     }
 }

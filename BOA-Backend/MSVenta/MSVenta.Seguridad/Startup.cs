@@ -41,8 +41,12 @@ namespace MSVenta.Seguridad
             services.AddScoped<IRolPermisoUsuarioService, RolPermisoUsuarioService>();
             services.AddScoped<IRolService, RolService>();
             services.AddScoped<IUsuarioService, UsuarioService>();
-            
+            services.AddScoped<IBitacoraService, BitacoraService>();
+            services.AddScoped<IHistorialService, HistorialService>();
+
             services.Configure<JwtOptions>(Configuration.GetSection("jwt"));
+            services.AddHostedService<RabbitMQConsumer>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

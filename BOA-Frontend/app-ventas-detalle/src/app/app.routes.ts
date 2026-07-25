@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardLayoutComponent } from './shared/layouts/dashboardLayout/dashboardLayout.component';
+import { authGuard } from './shared/guard/auth-guard.service';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,8 @@ export const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardLayoutComponent,
+    canActivate: [authGuard],
+    canActivateChild: [authGuard],
     children: [
       {
         path: 'roles',
@@ -34,12 +37,6 @@ export const routes: Routes = [
         loadChildren: () =>
           import('./modules/usuario/usuario.route').then(m => m.usuario_routes),
         data: { icon: 'pi pi-users', title: 'Usuario', description: 'Gestion de Usuarios', permission: 'usuarios' },
-      },
-      {
-        path: 'roles-permisos-usuario',
-        loadChildren: () =>
-          import('./modules/roles-permisos-usuario/roles-permisos-usuario.route').then(m => m.roles_permisos_usuario_routes),
-        data: { icon: 'pi pi-users', title: 'Asignacion de Roles', description: 'Gestion de Roles a Usuarios', permission: 'roles' },
       },
       {
         path: 'aeropuerto',

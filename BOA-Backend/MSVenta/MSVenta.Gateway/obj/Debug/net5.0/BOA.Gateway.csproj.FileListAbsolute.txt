@@ -40,3 +40,45 @@ C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net
 C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\ref\BOA.Gateway.dll
 C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.pdb
 C:\Users\Mi DELL\Documents\BOA\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.genruntimeconfig.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\appsettings.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\ocelot.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\BOA.Gateway.exe
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\BOA.Gateway.deps.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\BOA.Gateway.runtimeconfig.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\BOA.Gateway.runtimeconfig.dev.json
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\BOA.Gateway.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\BOA.Gateway.pdb
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Aforo255.Cross.Token.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\Ocelot.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.csproj.AssemblyReference.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.AssemblyInfoInputs.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.AssemblyInfo.cs
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\staticwebassets\BOA.Gateway.StaticWebAssets.Manifest.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\staticwebassets\BOA.Gateway.StaticWebAssets.xml
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\scopedcss\bundle\BOA.Gateway.styles.css
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.RazorTargetAssemblyInfo.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\ref\BOA.Gateway.dll
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.pdb
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gateway.genruntimeconfig.cache
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\BOA.Gate.14B1435D.Up2Date
+C:\Users\Antonio\Microservicios\BOA-SisVentas\BOA-Backend\MSVenta\MSVenta.Gateway\obj\Debug\net5.0\refint\BOA.Gateway.dll

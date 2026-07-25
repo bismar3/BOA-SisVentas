@@ -18,6 +18,7 @@ export class MisTicketsComponent implements OnInit {
   cargando: boolean = true;
   clienteId: number = 0;
   ticketSeleccionado: any = null;
+  errorPerfil: string = '';
 
   constructor(
     private http: HttpClient,
@@ -26,9 +27,14 @@ export class MisTicketsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const user = JSON.parse(sessionStorage.getItem('user') || '{}');
-    const userData = user.user || user;
-    this.clienteId = userData.userId;
+    const clienteIdRaw = sessionStorage.getItem('clienteId');
+    if (!clienteIdRaw) {
+      this.errorPerfil = 'No se encontró tu perfil de cliente. Contacta al administrador.';
+      this.cargando = false;
+      this.cdr.markForCheck();
+      return;
+    }
+    this.clienteId = Number(clienteIdRaw);
     this.load();
   }
 

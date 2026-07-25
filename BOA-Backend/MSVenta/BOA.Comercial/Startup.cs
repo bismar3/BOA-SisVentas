@@ -37,6 +37,9 @@ namespace BOA.Comercial
             services.AddScoped<ITicketService, TicketService>();
             services.AddScoped<ITransaccionService, TransaccionService>();
             services.AddScoped<IReservaService, ReservaService>();
+            services.AddScoped<IBitacoraService, BitacoraService>();
+
+            services.AddHostedService<RabbitMQConsumer>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

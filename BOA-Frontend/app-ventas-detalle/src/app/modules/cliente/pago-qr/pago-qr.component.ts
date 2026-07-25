@@ -123,17 +123,42 @@ export class PagoQrComponent implements OnInit, OnDestroy {
     ).subscribe({
       next: (response) => {
         if (response.pagado) {
-          this.pagado = true;
-          clearInterval(this.intervalVerificacion);
-          this.cdr.markForCheck();
-
-          setTimeout(() => {
-            this.router.navigate(['/dashboard/cliente/mis-compras']);
-          }, 3000);
+          // En modo simulación la venta sigue Pendiente: hay que confirmarla llamando al
+          // callback (Confirmada + bitácora + evento de ingreso). En modo Libélula, el pago
+          // real ya disparó el callback, así que solo cerramos la UI.
+          if (this.modo === 'simulacion') {
+            this.confirmarVentaSimulada(headers);
+          } else {
+            this.finalizarPago();
+          }
         }
       },
       error: () => {}
     });
+  }
+
+  // Reutiliza el endpoint de callback para dejar la venta simulada como Confirmada.
+  private confirmarVentaSimulada(headers: HttpHeaders): void {
+    const url = `${environment.URL_SERVICIOS}/pago/callback`
+      + `?transaction_id=${encodeURIComponent(this.codigoVenta)}`
+      + `&invoice_id=${encodeURIComponent(this.idTransaccion)}&invoice_url=`;
+
+    this.http.get<any>(url, { headers }).subscribe({
+      next: () => this.finalizarPago(),
+      error: () => this.finalizarPago()   // la UI igual muestra el pago como hecho
+    });
+  }
+
+  private finalizarPago(): void {
+    this.pagado = true;
+    if (this.intervalVerificacion) {
+      clearInterval(this.intervalVerificacion);
+    }
+    this.cdr.markForCheck();
+
+    setTimeout(() => {
+      this.router.navigate(['/dashboard/cliente/mis-compras']);
+    }, 3000);
   }
 
   abrirPasarela(): void {

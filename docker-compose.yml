@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  # ---------------------------------------
+  # 1. MICROSERVICIO: BOA.Seguridad
+  # ---------------------------------------
+  mysql-seguridad:
+    image: mysql:8.0
+    container_name: boa_db_seguridad
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_boa_seguridad
+    ports:
+      - "3311:3306"
+    volumes:
+      - db_data_seguridad:/var/lib/mysql
+    restart: always
+
+  # ---------------------------------------
+  # 2. MICROSERVICIO: BOA.Operaciones
+  # ---------------------------------------
+  mysql-operaciones:
+    image: mysql:8.0
+    container_name: boa_db_operaciones
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_boa_operaciones
+    ports:
+      - "3312:3306"
+    volumes:
+      - db_data_operaciones:/var/lib/mysql
+    restart: always
+
+  # ---------------------------------------
+  # 3. MICROSERVICIO: BOA.Comercial
+  # ---------------------------------------
+  mysql-comercial:
+    image: mysql:8.0
+    container_name: boa_db_comercial
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_boa_comercial
+    ports:
+      - "3313:3306"
+    volumes:
+      - db_data_comercial:/var/lib/mysql
+    restart: always
+
+  # ---------------------------------------
+  # 4. MICROSERVICIO: BOA.Finanzas
+  # ---------------------------------------
+  mysql-finanzas:
+    image: mysql:8.0
+    container_name: boa_db_finanzas
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_boa_finanzas
+    ports:
+      - "3314:3306"
+    volumes:
+      - db_data_finanzas:/var/lib/mysql
+    restart: always
+
+  # ---------------------------------------
+  # 5. MENSAJERÍA: RabbitMQ
+  # ---------------------------------------
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: boa_rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"   # Puerto de comunicación AMQP
+      - "15672:15672" # Panel de administración web
+    restart: always
+
+# ---------------------------------------
+# VOLÚMENES PARA PERSISTENCIA DE DATOS
+# ---------------------------------------
+volumes:
+  db_data_seguridad:
+  db_data_operaciones:
+  db_data_comercial:
+  db_data_finanzas:

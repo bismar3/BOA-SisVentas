@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "MSVenta.Seguridad\\BOA.Seguridad.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MSVenta.Venta\\BOA.Operaciones.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MSVenta.Gateway\\BOA.Gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BOA.Comercial\\BOA.Comercial.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BOA.Finanzas\\BOA.Finanzas.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

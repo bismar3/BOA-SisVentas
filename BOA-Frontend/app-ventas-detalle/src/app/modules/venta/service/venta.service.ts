@@ -17,4 +17,9 @@ export class VentaService {
   getAllDetalle(): Observable<VentaDetalle[]> {
     return this.http.get<VentaDetalle[]>(`${this.apiUrl}/detalle`, { headers: this.getHeaders() });
   }
+
+  eliminarVenta(id: number, adminId?: number): Observable<any> {
+    const url = adminId ? `${this.apiUrl}/${id}?adminId=${adminId}` : `${this.apiUrl}/${id}`;
+    return this.http.delete(url, { headers: this.getHeaders() });
+  }
 }

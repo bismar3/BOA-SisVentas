@@ -54,6 +54,7 @@
         <tr class="bg-gradient-to-r from-orange-600 to-red-500 text-white">
           <th class="px-2 py-2 text-left rounded-l-lg">#</th>
           <th class="px-2 py-2 text-left">CÓDIGO</th>
+          <th class="px-2 py-2 text-left">FECHA</th>
           <th class="px-2 py-2 text-left">CLIENTE</th>
           <th class="px-2 py-2 text-left">VUELO</th>
           <th class="px-2 py-2 text-left">ASIENTO</th>
@@ -69,6 +70,10 @@
           class="hover:bg-gray-700 transition-colors duration-300 border-b border-gray-700">
           <td class="px-2 py-2">{{ v.id }}</td>
           <td class="px-2 py-2 font-bold text-orange-400">{{ v.codigo_Venta }}</td>
+          <td class="px-2 py-2 text-left whitespace-nowrap">
+            <span *ngIf="v.created_At">{{ v.created_At | date:'dd/MM/yyyy HH:mm' }}</span>
+            <span *ngIf="!v.created_At" class="text-gray-500">-</span>
+          </td>
           <td class="px-2 py-2 text-left">
             <div class="font-semibold">{{ v.cliente_Nombre }}</div>
             <div class="text-gray-400 text-xs">{{ v.cliente_Documento }}</div>
@@ -105,10 +110,14 @@
               class="bg-cyan-600 text-white px-2 py-1 rounded-lg hover:bg-cyan-700 transition-all duration-300">
               👁️
             </button>
+            <button title="Eliminar venta" (click)="eliminar(v)"
+              class="bg-red-600 text-white px-2 py-1 rounded-lg hover:bg-red-700 transition-all duration-300 ml-1">
+              🗑️
+            </button>
           </td>
         </tr>
         <tr *ngIf="ventasFiltradas.length === 0">
-          <td colspan="10" class="px-2 py-6 text-gray-400">No hay ventas registradas</td>
+          <td colspan="11" class="px-2 py-6 text-gray-400">No hay ventas registradas</td>
         </tr>
       </tbody>
     </table>

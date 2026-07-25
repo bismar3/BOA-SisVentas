@@ -83,6 +83,32 @@ export class VentasListComponent implements OnInit {
     }
   }
 
+  eliminar(v: VentaDetalle): void {
+    if (!confirm(`¿Eliminar la venta ${v.codigo_Venta}? Esta acción no se puede deshacer.`)) return;
+
+    this.ventaService.eliminarVenta(v.id, this.getAdminId()).subscribe({
+      next: () => {
+        this.ventas = this.ventas.filter(x => x.id !== v.id);
+        this.ventasFiltradas = this.ventasFiltradas.filter(x => x.id !== v.id);
+        this.cdr.markForCheck();
+      },
+      error: (e) => {
+        console.error('[Ventas] Error al eliminar', e);
+        alert('No se pudo eliminar la venta.');
+      }
+    });
+  }
+
+  // Id del usuario admin logueado (para registrar en bitácora quién borró).
+  private getAdminId(): number | undefined {
+    try {
+      const user = JSON.parse(sessionStorage.getItem('user') || '{}');
+      return user?.userId;
+    } catch {
+      return undefined;
+    }
+  }
+
   getMetodoPagoClass(metodo: string): string {
     switch (metodo) {
       case 'QR': return 'bg-cyan-600';
